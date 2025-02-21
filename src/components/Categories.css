@@ -1,0 +1,150 @@
+.categories-section {
+  padding: 4rem 0;
+  background-color: #f8f8f8;
+}
+
+.category-grid {
+  display: flex;
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.category-card {
+  flex: 1;
+  height: 500px;
+  min-width: 700px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: #333;
+  background-size: cover;
+  background-position: center;
+}
+
+.skincare {
+  background-image: url('https://www.upload.ee/image/17769507/beauty-concept-woman-holds-moisturizer-her-hand.jpg');
+  color:bisque;
+  background-color: #e8e8e8;
+}
+
+.makeup {
+  background-image: url('https://www.upload.ee/image/17769535/beautiful-female-face-perfect-clean-skin-young-caucasian-woman-red-studio-background.jpg');
+  background-color: #e0e5e5;
+}
+
+.category-content {
+  z-index: 1;
+}
+
+.category-content h3 {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.category-content h2 {
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  margin-bottom: 2rem;
+}
+
+.explore-btn {
+  background: none;
+  border: 1px solid #333;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.feature-item {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.feature-dot {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 1440px) {
+  .category-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+    min-width: unset;
+  }
+}
+
+.makeup-category {
+  background-image: url('https://www.upload.ee/image/17769535/beautiful-female-face-perfect-clean-skin-young-caucasian-woman-red-studio-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.makeup-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+}
+
+.makeup-category .category-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.makeup-category .category-title {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.makeup-category .category-description {
+  color: rgba(255, 255, 255, 0.9);
+} 
